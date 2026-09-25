@@ -1,0 +1,24 @@
+.sidebarContainer {
+    display: flex;
+    flex-direction: column;
+     margin-top: 30%; /* Moves the sidebar content 30% down from the top */
+       gap: 16px;  /* Space between Dashboard and Applications items */
+}
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;            /* Space between icon and text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;      /* Slightly larger text */
+}
+
+.sidebar-item svg {
+  font-size: 24px;      /* Makes the icons larger */
+}
+
+.sidebar-item:hover {
+  background-color: #e5e5e5;
+  border-radius: 8px;
+}

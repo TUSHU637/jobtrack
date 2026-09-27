@@ -1,0 +1,78 @@
+.application-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(120px, 0.35fr);
+    align-items: stretch;
+    gap: 16px;
+    min-width: 0;
+}
+.application-card-details {
+    min-width: 0;
+}
+.application-card-details h3,
+.application-card-details p {
+    overflow-wrap: anywhere;
+}
+.application-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+.application-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 88px;
+    padding: 12px;
+    border-left: 1px solid #d8dce2;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+.application-status p {
+    margin: 0;
+}
+
+.view-details-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-details-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+@media (max-width: 560px) {
+    .application-card {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+    .application-status {
+        min-height: 56px;
+        border-top: 1px solid #d8dce2;
+        border-left: 0;
+    }
+    .application-card-actions button {
+        min-height: 40px;
+    }
+}

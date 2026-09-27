@@ -43,11 +43,17 @@ function Applications() {
         employmentType: getOptions(applications, 'employmentType'),
     };
     const filteredApplications = applications.filter((application) => {
+        
         const searchText = search.trim().toLowerCase();
         const matchesSearch = !searchText || [application.company, application.role]
             .some((value) => value.toLowerCase().includes(searchText));
-        const matchesOptions = ['status', 'workMode', 'location', 'employmentType']
-            .every((field) => !filters[field] || application[field] === filters[field]);
+
+        const matchesOptions =
+            (filters.status === "" || application.status === filters.status) &&
+            (filters.workMode === "" || application.workMode === filters.workMode) &&
+            (filters.location === "" || application.location === filters.location) &&
+            (filters.employmentType === "" || application.employmentType === filters.employmentType);
+    
         const salaryAmounts = application.salaryRange.match(/[\d,]+(?:\.\d+)?/g) || [];
         const salaryValues = salaryAmounts.map((amount) => Number(amount.replaceAll(',', '')));
         const salaryInLpa = /month/i.test(application.salaryRange)

@@ -1,4 +1,4 @@
-[
+const applications = [
   {
     "id": 1,
     "company": "Google",
@@ -60,3 +60,4 @@
     "recruiter": "Neha Gupta"
   }
 ]
+export default applications;

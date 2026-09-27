@@ -13,7 +13,7 @@ const ApplicationCard = ({ application }) => {
         </div>
       </div>
       <div className="application-status">
-        <h4>Status: {application.status}</h4>
+        <h4 className={`status-${application.status}`}>Status: {application.status}</h4>
       </div>
     </div>
   )

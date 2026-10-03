@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/ComponentStyle/applicationCard.css'
 const ApplicationCard = ({ application }) => {
   return (
@@ -8,7 +9,9 @@ const ApplicationCard = ({ application }) => {
         <p>{application.role}</p>
         <p>{application.location}</p>
         <div className="application-card-actions">
-          <button className="view-details-button">View Details</button>
+             <Link to ={`details/${application.id}`} className="view-details-link">
+              <button className="view-details-button">View Details</button>
+            </Link>
           <button className="delete-button">Delete</button>
         </div>
       </div>

@@ -3,6 +3,9 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Applications from './pages/Applications'
+import ApplicationDetails from './pages/ApplicationDetails'
+import Dashboard from './pages/Dashboard'
+import { Route,Routes } from 'react-router-dom'
 
 function App() {
 
@@ -16,10 +19,14 @@ function App() {
       <Sidebar />
         </div>
         <div className="main-content">
-      <Applications />
+        <Routes>
+          <Route path="/" element={<Dashboard />} /> 
+          <Route path="/applications" element={<Applications />} />
+          <Route path="/applications/details/:id" element={<ApplicationDetails />} />
+        </Routes>
         </div>
       </div>
-    </div>
+        </div>
   )
 }
 

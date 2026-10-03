@@ -14,8 +14,13 @@
     font-size: 16px;      /* Slightly larger text */
 }
 
+.sidebar-item-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit;        /* Inherits the color from parent */
+}
+
 .sidebar-item svg {
-  font-size: 24px;      /* Makes the icons larger */
+  font-size: 26px;      /* Makes the icons larger */
 }
 
 .sidebar-item:hover {

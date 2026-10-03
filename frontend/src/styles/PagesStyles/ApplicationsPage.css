@@ -1,6 +1,69 @@
-.applications-header {
+.applications-header-container {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
+.add-application-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}.add-application-btn:hover {
+    background-color: #0056b3;
+}
+.success-toast {
+    position: fixed;
+    top: 80px;
+    left: 280px;
+    z-index: 1100;
+    max-width: min(420px, calc(100vw - 32px));
+    padding: 12px 16px;
+    border: 1px solid #8ec9a2;
+    border-radius: 6px;
+    background: #effaf2;
+    color: #185b2c;
+    box-shadow: 0 4px 16px rgba(20, 50, 30, 0.15);
+    animation: toast-enter 0.28s ease-out both;
+}
+@keyframes toast-enter {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .success-toast {
+        animation: none;
+    }
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 720px;
+    width: calc(100% - 32px);
+    max-height: calc(100dvh - 32px);
+    overflow-y: auto;
+}
+
 .applications-functionality{
     display: flex;
     justify-content: flex-start;

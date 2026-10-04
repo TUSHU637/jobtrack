@@ -1,0 +1,316 @@
+.application-details-page {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    color: #202a36;
+}
+
+.application-details-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 18px;
+    padding: 8px 0;
+    border: 0;
+    background: transparent;
+    color: #526273;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 150ms ease;
+}
+
+.application-details-back:hover {
+    color: #1769aa;
+}
+
+.application-details-back span {
+    font-size: 19px;
+    line-height: 1;
+}
+
+.application-details-hero,
+.application-details-section,
+.application-not-found {
+    border: 1px solid #e4e9ef;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(24, 39, 58, 0.045);
+}
+
+.application-details-hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 0;
+    padding: 26px;
+}
+
+.application-company-avatar {
+    display: grid;
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    place-items: center;
+    border: 1px solid #dbe9f8;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #edf6ff, #e7efff);
+    color: #2468a5;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.application-details-title {
+    flex: 1;
+    min-width: 0;
+}
+
+.application-details-eyebrow {
+    margin-bottom: 5px;
+    color: #718093;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.application-details-title h1 {
+    overflow-wrap: anywhere;
+    color: #1d2938;
+    font-size: clamp(23px, 3vw, 30px);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.2;
+}
+
+.application-details-role {
+    margin-top: 7px;
+    color: #657386;
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.application-details-status {
+    display: grid;
+    justify-items: end;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.application-details-label {
+    color: #718093;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.application-detail-status-badge .status-Applied,
+.application-detail-status-badge .status-Interview,
+.application-detail-status-badge .status-Screening,
+.application-detail-status-badge .status-Wishlist,
+.application-detail-status-badge .status-Rejected,
+.application-detail-status-badge .status-Offer {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    margin: 0;
+    padding: 5px 11px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.application-details-content {
+    display: grid;
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.application-details-section {
+    min-width: 0;
+    padding: 23px 26px;
+}
+
+.application-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.application-section-heading h2 {
+    color: #253244;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.35;
+}
+
+.application-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px 24px;
+    margin: 0;
+}
+
+.application-recruiter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.application-info-item {
+    min-width: 0;
+}
+
+.application-info-item dt {
+    margin-bottom: 7px;
+    color: #778597;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.application-info-item dd {
+    margin: 0;
+    color: #293648;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.application-notes-content {
+    margin: 0;
+    color: #465568;
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.application-notes-content.is-empty {
+    color: #8793a1;
+    font-style: italic;
+}
+
+.application-not-found {
+    display: grid;
+    justify-items: center;
+    max-width: 520px;
+    margin: 48px auto;
+    padding: 40px 28px;
+    text-align: center;
+}
+
+.application-not-found-icon {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    place-items: center;
+    border-radius: 50%;
+    background: #eef5fc;
+    color: #3273a9;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.application-not-found h1 {
+    color: #253244;
+    font-size: 21px;
+}
+
+.application-not-found p {
+    margin-top: 8px;
+    color: #718093;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.application-back-button {
+    min-height: 40px;
+    margin-top: 22px;
+    padding: 0 16px;
+    border: 0;
+    border-radius: 7px;
+    background: #1769aa;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 150ms ease;
+}
+
+.application-back-button:hover {
+    background: #125589;
+}
+
+.application-details-back:focus-visible,
+.application-back-button:focus-visible {
+    outline: 3px solid #91c5ee;
+    outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+    .application-info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .application-details-hero {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .application-company-avatar {
+        flex-basis: 52px;
+        width: 52px;
+        height: 52px;
+        border-radius: 12px;
+        font-size: 23px;
+    }
+
+    .application-details-title {
+        flex-basis: calc(100% - 67px);
+    }
+
+    .application-details-status {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 100%;
+        margin: 0;
+        padding-top: 14px;
+        border-top: 1px solid #edf0f4;
+    }
+
+    .application-details-section {
+        padding: 20px;
+    }
+
+    .application-info-grid,
+    .application-recruiter-grid {
+        gap: 18px 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .application-info-grid,
+    .application-recruiter-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .application-details-back,
+    .application-back-button {
+        transition: none;
+    }
+}

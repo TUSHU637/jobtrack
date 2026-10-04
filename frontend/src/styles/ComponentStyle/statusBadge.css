@@ -1,0 +1,24 @@
+.status-Applied {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+.status-Interview {
+    background-color: #fff3e0;
+    color: #f57c00;
+}
+.status-Screening {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+.status-Wishlist {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+.status-Rejected {
+    background-color: #ffebee;
+    color: #d32f2f;
+}
+.status-Offer {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+}

@@ -5,23 +5,12 @@ import SearchBar from '../components/SearchBar.jsx';
 import Filterbar from '../components/Filterbar.jsx';
 import '../styles/PagesStyles/ApplicationsPage.css'
 import AddModal from '../components/AddModal.jsx';
+import { loadApplications } from '../utils/applicationStorage.js';
 
 const APPLICATIONS_STORAGE_KEY = 'jobtrack-added-applications-v2';
 const SEED_APPLICATION_IDS = new Set(applications.map((application) => application.id));
 
-const loadApplications = () => {
-    try {
-        const currentSaved = localStorage.getItem(APPLICATIONS_STORAGE_KEY);
-        const isLegacyData = currentSaved === null;
-        const savedApplications = JSON.parse(currentSaved || '[]');
-        const addedApplications = Array.isArray(savedApplications)
-            ? (isLegacyData ? [...savedApplications].reverse() : savedApplications)
-            : [];
-        return [...addedApplications, ...applications];
-    } catch {
-        return applications;
-    }
-};
+
 
 const getSalaryBounds = (records) => {
     const salaries = records.flatMap((application) => {

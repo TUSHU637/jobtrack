@@ -1,0 +1,47 @@
+.empty-state {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    min-height: 240px;
+    padding: 36px 24px;
+    align-content: center;
+    border: 1px dashed #cfd9e4;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #fff, #f8fbfe);
+    text-align: center;
+}
+
+.empty-state-icon {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 16px;
+    place-items: center;
+    border: 1px solid #dfebf5;
+    border-radius: 15px;
+    background: #edf5fc;
+    color: #3273a9;
+    font-size: 22px;
+}
+
+.empty-state h2 {
+    color: #293648;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.empty-state p {
+    max-width: 360px;
+    margin-top: 7px;
+    color: #7a8796;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    .empty-state {
+        min-height: 210px;
+        padding: 28px 18px;
+    }
+}

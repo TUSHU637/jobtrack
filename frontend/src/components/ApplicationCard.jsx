@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import StatusBadge from './StatusBadge.jsx'
 import '../styles/ComponentStyle/applicationCard.css'
 
-const ApplicationCard = ({ application }) => {
+const ApplicationCard = ({ application, showDelete=true }) => {
   return (
     <div className="application-card">
       <div className="application-card-details">
@@ -14,7 +14,9 @@ const ApplicationCard = ({ application }) => {
              <Link to ={`/applications/details/${application.id}`} className="view-details-link">
               <button className="view-details-button">View Details</button>
             </Link>
-          <button className="delete-button">Delete</button>
+          {showDelete && (
+            <button className="delete-button">Delete</button>
+          )}
         </div>
       </div>
       <div className="application-status">
